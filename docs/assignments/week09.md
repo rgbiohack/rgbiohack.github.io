@@ -57,8 +57,14 @@ This was a pretty straight forward task and the steps are detailed below.
 
 For the Group assignment, the goal was to compare performance and development workflows for different architectures
 
+From the archive data, there are 5 major Atmel Architectures that are commonly used in the course
+
+- ATtiny44
+- ATtiny45
+- ATtiny84
+- ATtiny85
+- ATMega328P
+
 ## Useful links
 
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
 - [PDF Extraction](https://tools.pdf24.org/en/extract-images)

@@ -35,7 +35,7 @@ invention, intellectual property, and income
 
 ### What Has not?
 
-The following assignments presented degrees of error that have not been encountered and I am looking to resolve these ASAP
+The following assignments presented varying degrees of error and I am looking to resolve these in the coming months as I upgrade my knowledge of machines, electronics and workflows
 
 electronics production
 electronics design
@@ -58,6 +58,14 @@ mechanical design
 
 - There are pending issues in the electroincs development that have yet to be resolved to satisfaction
 
+### Time Management Methods
+
+As outline in the original talks and and recitations by Neil, the concept of [Spiral Development](https://www.geeksforgeeks.org/software-engineering-spiral-model/) stuck with me and it really works as a great time management technique.
+
+With Spiral development as a Time Management process, the immediate goal is always to figure out the best way to achieve the simplest and most fundamental goals first and then keep adding spirals to the process after reviewing progress and planning for the next phases.
+
+Since my project is expected to be a complex one, I understand the limitation of working as a single student and while this experience hase been extremely grueling as the only studnet in a first time Fablab, it has also been illuminating from the point-of-view of how the course can be made better with time and for all types of students (Espcially noobs like myslef with little experience in Machine design or Electronics production)   
+
 ### Learning
 
 Fortunately, the learning has been the greatest experience of Fab Academy at the moment primarily for the simplest reason of learning about all the open-source tools and community that is distributed around the world in order to achieve similar goals in democratising technology.
@@ -70,8 +78,3 @@ The most important learnings in this coure practice have been the very first pri
 - Documentation
 - Completing projects on time
 
-## Useful links
-
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)

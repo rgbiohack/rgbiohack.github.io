@@ -66,8 +66,24 @@ Processes expected
 - PCB Design for custom control
 - IP and Income from interested parties
 
-## Useful links
+## Learning
 
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+The varieties of softwares that are required for 2D or 3D modelling are quite varied and related to the completxity of the projects that are to be designed or modelled.
+
+The different 3D softwares that I have used are along with their difficulty are listed below:
+
+- [Solid Works](https://www.solidworks.com/) (+++) - Required basic undertanding of Mechanical Engg. principles and about 40 hours of tutorials
+- [Fusion 360](https://www.autodesk.com/products/fusion-360/students-teachers-educators) (++) - Easier than SW, but still requires extensive tutorials to master
+- [Blender](https://www.blender.org/) (+++) - Made for imagineers and animators
+- [FreeCAD](https://www.freecadweb.org/) (+) - As simple as Engineering drawing, but still needs the basic tutorials, also supports parametric design
+- [Google Sketchup](https://www.sketchup.com/) 2017 Make (+) - Pro is the best, but free versions with basic plugins almost completely substutues for Pro version, anyone can master
+- [Onshape](https://www.onshape.com/) (+) - Comes with tutorials at every step and a worthy competition for Solidworks without the high price tag
+
+Not coming from a Mechanical engineering background, the ease of use for 3D software was a very important factor in preparing designs and models, and I discovered that the Google Sketchup Software (Pro) easily wins for the amateur designer for its simplicty of use and extensive library that is commonly shared to begin projects.
+
+Among the 2D softwares used:
+
+- [Inkscape](https://inkscape.org/) (++) - Perfect for learning how to do basic design
+- [CorelDraw](https://www.coreldraw.com/en/) (+) - Hands Down the best and most intuitive to use
+
+Modelling Software is incredibly useful to have in specific use cases and my learning will continue until I have basic mastery over all these softwares.

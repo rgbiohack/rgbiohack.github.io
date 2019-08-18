@@ -44,3 +44,5 @@ For this project, I have decided to go with an Open-Source Hardware design licen
 - [Google](http://google.com)
 - [Free License](https://en.wikipedia.org/wiki/Free_license)
 - [Hardware License](https://en.wikipedia.org/wiki/TAPR_Open_Hardware_License)
+- [Video](../images/week19/presentation.mp4)
+- [Slide](../images/week19/presentation.png)

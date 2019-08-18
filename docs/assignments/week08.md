@@ -33,21 +33,38 @@ The following design was commissioned by a DJ who wanted a common stand for all 
 
 ![](../images/week08/1D.png)
 
-Due to the Size limitations of the CNC Router used at our Lab, the bed size is only 600x600mm, the final design was taken to a partner location for cutting on a large format CNC Router.
+Due to the Size limitations of the CNC Router used at our Lab, the bed size is only 600x600mm, the final design was taken to a partner location for cutting on a large format CNC Router (4 feet by 8 feet). The specs of the mcahine are given below
+
+Machine design Specs
+
+Excitech CNC Router (China) - 4x8 feet
+
+Italian Spindle for Routing
+
+![](../images/week08/Mech1.jpg)
+
+RPM: 18000
 
 Using ArtCAM, the final design was converted to Gcode and cut on the machine. The steps are denoted in the Gallery.
 
+The model was cut on the 4x8 large format CNC Machine
+
 Final Object image is presented here
 
-![](../images/week08/A19.jpg)
+![](../images/week08/A19.JPG)
 
-![](../images/week08/A21.jpg)
+![](../images/week08/A21.JPG)
 
-## Useful links
+Material used for this project: 12mm Brown MDF Board
+Software used for the project: [ArtCAM](https://buildyourcnc.com/Item/CAM-SOFTWARE-artcam) (old version)
+
+
+
+
+## Useful Files
 
 - [Expand Furniture](https://expandfurniture.com/)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+- [Final Model](../images/week08/Alkesh.skp))
 
 
 ## Gallery

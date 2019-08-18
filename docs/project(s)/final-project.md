@@ -108,7 +108,7 @@ For the Materials for the outer body, the material selected was 3/4 inch [EVA Fo
 
 The Assignment topics covered here for the project is listed step wise:
 
-### Machine Design And Mecahnical Design
+### Machine Design And Mechanical Design
 
 Machine Design - Limited to basic mechanical functions only
 
@@ -144,6 +144,21 @@ The bare bones of this project is detailed in the Presentation slide and video s
 ![](../images/Xproject/presentation.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GSupla9MWGU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Bill of Materials
+
+EVA Foam and Construction materials - INR 500
+SMPS (12V, 10A) - INR 2000
+Large Heat Sink - INR 250
+Peltier Module (12V, 6A) - INR 250
+Temperature Sensor - INR 150
+LCD Sensor - INR 400
+DIY Arduino - INR 300
+Satshakit - INR 300
+Misc - INR 500
+
+Total Costing - INR 4650 (approx. USD 70)
+
 
 
 ## Useful links

@@ -10,9 +10,9 @@ Goal(s):
       
 ## Research
 
-To get started with this assignment, I went through the tutorials of [MIT's App Inventor 2](http://appinventor.mit.edu/explore/index-2.html) and explored all the options for the creation of simple apps for my project.
+To get started with this assignment, I went through the tutorials of [ThingSpeak](https://thingspeak.com/) and explored all the options for the creation of simple IoT communication for my project.
 
-The goal will be to get the machine to relay data from the sensors directly via tha internet to a Mobile phone inteface from where the progress ofthe operation can be monitored.
+The goal will be to get the machine to relay data from the sensors directly via tha internet to a Mobile phone inteface from where the progress of the operation can be monitored.
 
 Sensors used:
 
@@ -22,8 +22,18 @@ Water Proof Temperature sensor
 
 ESP8266 WiFi module for relaying information.
 
+I used the DIY Arduino for the testing of the sensors and relaying thhe data to the ThingSpeak App
+
+## Thingspeak
+
+
+
+## Output
+
+![](../images/week14/Thin.JPG)
+
 ## Useful links
 
 - [Jekyll](http://jekyll.org)
 - [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+- [ThingSpeak](https://thingspeak.com/)

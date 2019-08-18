@@ -8,57 +8,47 @@ Goal(s):
 - Individual assignment:
   - Make an in-circuit programmer by milling the PCB, program it, then optionally try other PCB processes
 
-## PCB
-A printed circuit board (PCB) mechanically supports and electrically connects electronic components using conductive tracks, pads and other features etched/milled from copper sheets laminated onto a non-conductive substrate. A basic building block of the PCB is an FR-4 panel with a thin layer of copper foil laminated to one or both sides.There are multiple ways of making the PCB. The most common techniques being etching and milling.
+## Basics
 
-There are two ways of mounting the parts to the PCB. The Trough Hole Mounting:mounting technique involves different components which have lead wires that are led to the board through holes, hence the name. And in Surface Mount Technology(SMT), the leads are soldered on PCB surface directly rather than using hole mounting
+The electronics side of Fab Academy was quite new to me and this has been a steep learning curve for me.
 
-## PCB Milling
+The main idea is to build an In-System Programmer which can then be used to program other boards needed later during the course.
 
-In the lab, we used a router for the PCB milling. We had the following tools for milling the PCB
+For this purpose, an ATTiny Microchip is used as the chip for programming
 
-SVP Laser CNC Router
-Single-Sided Copper Clad Circuit PCB Board (FR1)
-Double sided tape
-Engraving bits
+From the many tutorials out there, the main chips used for this are listed below and the main type of components used are SMD Packages
 
-## Sacrificial Layer
+- [ATTiny44](https://www.microchip.com/wwwproducts/en/ATtiny44#datasheet-toggle)
+- [ATTiny45](https://www.microchip.com/wwwproducts/en/ATtiny45)
+- [ATTiny85](https://www.microchip.com/wwwproducts/en/ATtiny85)
 
-We need a sacrificial layer here because in case something goes wrong and the milling bit goes further than expected, we might just end up damaging the base plate. The sacrificial layer as the name suggests sacrifices itself for saving the base plate from any damage.To do this we apply the dual sided tape onto a copper clad board, about the same or of greater size to that of the plate we are going to mill.
+For this exercise, I decided to use the PCB Etching Workflow using the laser cutter as this was a familiar process and simple enough to achieve
 
-## Setting the PCB
+## PCB Production Process
 
-A PCB board of suitable size could be fixed on the sacrficial layer using double side tape. Care should be taken to evenly place the board, as any variations may cause cutting tool breakage. If the milling surface is not level then need to apply pressure gently on the raised areas, if that doesn’t work we need to redo the adhesive part, making sure that its level and uniformly distributed.
+I used the following [image](http://www.theparsley.com/arduino/diy/pattern.jpg) as shared in this [Instructable](https://www.instructables.com/id/DIY-Arduino-or-The-DIY-Duino/)
 
-## Attaching the milling bit
+This image was opened in Corel Draw and the negative was laser engraved on to a Copper clad plate with a sticker attached leaving the postive side of the circuit present on the board
 
-First we need to raise the milling head by using the ‘Tool-UP’ button on the Modela control panel. Using the Allen key, gently loosen the hex nut on the rotating part on the milling head, and gently remove the existing bit. Depending on the type of cut we need to select from 2 available bits. 1/64 for the traces and 1/32 for the border cut. While storing, we need to ensure that the bits should be placed in its appropriate container with the cap on. It is also a good idea to place a sponge(soft cloth) beneath the tool holder to ensure that the bit is not damage in case it falls while being removed.
+The engraved board was removed, cut and cleaned with Iso-Propyl alcohol to remove glue traces.
 
-The board layout, need to be available as an image (.png) file, having black and white coloring. The black portion of the board is removed by the miller and the white portion remains as the circuit trace. The layout used for this assignments are available here
+The board was then placed in an etching solution of Hydrochloric acid and Hydrogen peroxide and agitated continuously for 7 minutes until all the copper was removed.
 
-## Setting the orgin
+The final board was then cleaned with Acetone to remove all the glue and the stickers from the board
 
-We need to set the origin so that the machine knows from where it should start the operation. This is also vital in order to select the desired area on the copper board on which to mill the PCB. First we need to select the ‘move to xmin, ymin’ option. This would move the milling head to the Zero (20,20 by default). Then by changing the values we could locate the orgin to the desired area. In my assignment, I shifted the orgin to (2,79), so as to mill on the available space at the top left corner. Then move the milling head down by using the ‘Tool-Down’ button on the front panel, till we reach about 0.5 cms above the milling surface. Now with the Allen key, gently loosen the hex-nut holding the bit such that the bit drops to the milling surface. Then fasten the nut. Now the milling bit should be resting just on the top of the milling surface, as seen in the image.
+The other machining processes for the PCB Board were also tried, but they did not yield satisfactory results and hence the chemical process was used.
 
-## Milling the board
+## Making the Programmer Board
 
-Select the ‘PCB traces’ option under the ‘process’ drop down. Adjust the cut depth to 0.1mm, which will mill away the copper. Then select the ‘calculate’ option.This will generate the tool path for the device.Go through the tool paths and see if all traces are available. It is interesting to note that if we give -1 as the offset value, then all the copper except the traces will be removed. Finally click the ‘send’ button to send the tool path to the device. And it will start cutting. A status window will be displayed, showing the time elapsed and remaining, and mine took about 10mins to mill the traces.
+After using the same Workflow for the FabISP Tiny Star, the final board is shown here
 
-If so redo the entire traces with a little more cut depth. Once the traces are ready, replace the bit with the 1/32 bit and repeat the same process with the border for cutting the board out. Be sure to use the ‘Cut out board’ option in the process dropdown. We have to use another .png file that looks like the one below to do the border cutting
+The rest of the steps are followed as per Brians's page and Jim Seelan's page
 
-Once this cutting is finished, we can remove the cut board from the mill.
+### Stuffing and Soldering
 
-## Stuffing and Soldering
+The FabISP Tiny Star needs the following parts:
 
-Once the board is milled the next task is stuff the boards with the parts. This could be done in the following steps.
-
-Identify the parts that goes into the board
-Place them in a markable tray/sheet
-Solder them to the board
-
-The fabTinyISP needs the following parts:
-
-1x ATtiny45 or ATtiny85
+1x ATtiny45 or ATtiny85 (This was the one available)
 2x 1kΩ resistors
 2x 499Ω resistors
 2x 49Ω resistors
@@ -71,14 +61,70 @@ The fabTinyISP needs the following parts:
 It is important to note the orientation of the parts,
 
 The zener diodes are marked, both in the drawing and on the packages, with a line on the cathode side.
+
 The LED cathodes on the PCB drawing are marked with dots and thicker lines. The one in our lab has a green line visible on the cathode side of the epoxy lens.
-The ATtiny45 marks pin 1 with a dot laser-etched into the corner of the package. Pin 1 is marked in the drawing with a dot as well. This should be pointing to bottom left when the USB is on the left side.
-And its better to start soldering with the ATtiny45 as it will be more accessible when other parts not around. Once the parts are all soldered in then need to use solder to create a bridge on the jumper near the ISP header (J1). This temporarily connects VCC to the Vprog pin on the ISP header so that the header can be used to program the tiny45.
+The ATtiny85 marks pin 1 with a dot laser-etched into the corner of the package. Pin 1 is marked in the drawing with a dot as well. This should be pointing to bottom left when the USB is on the left side.
+And its better to start soldering with the ATtiny85 as it will be more accessible when other parts not around. Once the parts are all soldered in then need to use solder to create a bridge on the jumper near the ISP header (J1). This temporarily connects VCC to the Vprog pin on the ISP header so that the header can be used to program the board.
 
 Once the soldering is done, we need to inspect it against the schematic and PCB layout image, and also check if the parts are all placed correctly and connection are soldered properly.
 
+### Programming the board
+
+First we need to setup the enviorment. We used AVRDUDE, which is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers using the in-system programming technique (ISP). For setting up the following command is entered on the terminal on Ubuntu.
+
+"sudo apt install avrdude gcc-avr avr-libc make"
+
+Then we need to download the firmware source code and extract and cd that path on a terminal window. Then we need to Run make. This will build the hex file that will get programmed onto the ATtiny85. When the command completes, we should have a file called fts_firmware.hex.
+
+Then we need to connect another programmer, I have used the AVRISP Programmer in our lab, to load the program to my fabISP. The Blue LED will glow now. It should be noted that the boards are oriented in the same direction. Then we need to enter "make flash" on the terminal. This will erase the target chip, and program its flash memory with the contents of the .hex file we built before. We should see several progress bars while avrdude erases, programs, and verifies the chip.
+
+But I got the following message.
+
+```
+WARNING: Unable to detect MCU
+
+avrdude.exe: set SCK frequency to 1000 Hz
+avrdude.exe: warning: cannot set sck period. please check for usbasp firmware update.
+avrdude.exe: error: program enable: target doesn't answer. 1 
+avrdude.exe: initialization failed, rc=-1
+             Double check connections and try again, or use -F to override
+             this check.
+
+
+avrdude.exe done.  Thank you.
+```
+
+After going through the problem in detail, I found the following text at the top of the Makefile within the firmware downloaded
+
+I then checked the [Gitbook](http://fabacademy.org/2018/docs/FabAcademy-Tutorials/week4_electronic_production/fabtinyisp_english.html) for troubleshooting the problem and was able to resolve it after checkng all connections and solder joints and plugging the FabISP properly into the USB port.
+
+```
+# Generic AVR Makefile - Adapted for FabTinyStar
+# Brian Mayton <bmayton@media.mit.edu>
+#
+# 'make' builds the .hex file.
+# 'make flash' uses the programmer to load it onto the target chip.
+# 'make fuses' programs the fuse bits on the target chip.
+# 'make rstdisbl' blows the reset fuse.
+# 'make clean' removes all autogenerated files.
+
+# OBJECTS should list all of the object files for the program (e.g. for each
+# .c file, list a corresponding .o file here.)  APPLICATION just specifies the
+# name of the hex/elf files, and can be whatever you want.
+``` 
+
+After flashing we need to set the configuration fuses, which is done by entering "make fuses" on the terminal. This will set up all of the fuses except the one that disables the reset pin. Next we need to check the USB connectivity. This is done by typing lsusb in the terminal, which will list USB devices. And if we should see a "Multiple Vendors USBtiny" device, it worked correctly.
+
+Now there are two final steps left to turn your board into a programmer that can program other boards. First, we need to change the bit that will turn the ATtiny85's reset pin into a GPIO pin. Once again, this will disable our ability to reprogram this ATtiny85 in the future, which is why we wanted to make sure everything was working before doing this. Connect the ISP programmer to the board one more time, and run "make rstdisbl". This does the same thing as the make fuses command, but this time it's going to include that reset disable bit as well. We should see some progress bars, and with that, avrdude will never be able to talk to this chip again through the ISP header. And it has begun its life as a programmer alone.
+
+
+
 ## Useful links
 
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+- [Gitbook](http://fabacademy.org/2018/docs/FabAcademy-Tutorials/week4_electronic_production/fabtinyisp_english.html)
+- [AVR Programming](https://sites.google.com/a/simpleavr.com/simpleavr/avr/vusbtiny)
+- [AVR Programmer](https://www.instructables.com/id/VUSBTiny-AVR-SPI-Programmer/)
+- [Fab TinyStar](http://fabacademy.org/archives/2015/doc/projects/FabTinyStar/)
+- [DIY Programmer](http://sheekgeek.org/2016/adamsheekgeek/how-to-fabtinystar-programmer)
+- [Hookup Guide](https://learn.sparkfun.com/tutorials/tiny-avr-programmer-hookup-guide/all)
+- [Fab Archive](http://fabacademy.org/archives/2015/doc/FabTinyIsp/index.html)

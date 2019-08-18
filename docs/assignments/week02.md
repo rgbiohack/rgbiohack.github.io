@@ -21,6 +21,16 @@ Goal(s)
 - Re-learning the basics of HTML, MarkDown and the Fab Academy template.
 - Creating my first website with Git.
 
+## Installing Git
+
+Installation of Git for Windows was a straightforward affair and the simple tutorial that I followed is shown [here](https://www.toolsqa.com/git/install-git-on-windows/)
+
+## Learning Git
+
+Of course, this was quite new to me to start with and this took a bit of time, but as we had some software development members, they were able to share a simple Git cheat sheet and the basic Git codes that I had to learn to effectively use Git Bash
+
+![](../images/week02/Cheatsheet.png)
+
 ## Course Website
 
 For making the Course website, I simply used the existing format given as I began learning [Markdown Language](https://www.markdownguide.org/) to write the webpage
@@ -53,14 +63,16 @@ Pulling all changes  when working on more than one system
 git pull
 ```
 
+Here is the sample of my first page done after making my first set of changes to the cloned repository
+
+![](../images/week02/sample.png)
+
 
 ## Useful links
 
 - [GitHub](https://github.com/)
 - [Google](http://google.com)
 - [Fab Archive](http://archive.fabacademy.org/)
+- [Markdown Language](https://www.markdownguide.org/)
 - [Git Cheat Sheet](https://github.com/hbons/git-cheat-sheet)
-
-## Gallery
-
-![](../images/week02/Cheatsheet.png)
+- [Git Tutorials](https://www.toolsqa.com/git/install-git-on-windows/)
